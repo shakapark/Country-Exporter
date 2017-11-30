@@ -45,10 +45,10 @@ func (sc *SafeConfig) ReloadConfig(confFile string) (err error) {
 }
 
 type Object struct {
-	target string `yaml:"target"`
-	database string `yaml:"database"`
-	login string `yaml:"login"`
-	passwd string `yaml:"password"`
+	Target string `yaml:"target"`
+	Database string `yaml:"database"`
+	Login string `yaml:"login"`
+	Passwd string `yaml:"password"`
 
 	XXX map[string]interface{} `yaml:",inline"`
 }
