@@ -49,7 +49,7 @@ type Object struct {
 	Database string `yaml:"database"`
 	Login string `yaml:"login"`
 	Passwd string `yaml:"password"`
-	Request string `yaml:"requestl"`
+	Request string `yaml:"request"`
 
 	XXX map[string]interface{} `yaml:",inline"`
 }
