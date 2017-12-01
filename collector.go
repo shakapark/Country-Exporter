@@ -64,6 +64,7 @@ func (c collector) Collect(ch chan<- prometheus.Metric){
 		return
 	}
 	
+	defer db.Close()
 	defer r.Close()
 		
 	for r.Next() {
